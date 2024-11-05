@@ -1,1 +1,30 @@
-<p>eliminar works!</p>
+<div class="container">
+    <h5>Verifica que sea el Jugador que deseas eliminar.</h5>
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">ID</label>
+            <input type="number" class="form-control" name="id" aria-describedby="idHelp" [(ngModel)]="jugador.id" readonly>
+        </div>
+        <div class="mb-3"> 
+            <label for="numJugador" class="form-label">Número de Jugador</label> 
+            <input type="number" class="form-control" name="numJugador" aria-describedby="numJugadorHelp" [(ngModel)]="jugador.numJugador" readonly > 
+        </div>
+        <div class="mb-3"> 
+            <label for="nombre" class="form-label">Nombre</label> 
+            <input type="text" class="form-control" name="nombre" aria-describedby="nombreHelp" [(ngModel)]="jugador.nombre" readonly> 
+        </div>
+        <div class="mb-3"> 
+            <label for="primerApellido" class="form-label">Primer Apellido</label> 
+            <input type="text" class="form-control" name="primerApellido" aria-describedby="primerApellidoHelp" [(ngModel)]="jugador.primerApellido" readonly> 
+        </div>
+        <div class="mb-3"> 
+            <label for="segundoApellido" class="form-label">Segundo Apellido</label> 
+            <input type="text" class="form-control" name="segundoApellido" aria-describedby="segundoApellidoHelp" [(ngModel)]="jugador.segundoApellido" readonly> 
+        </div>
+        <div class="mb-3"> <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label> 
+            <input type="date" class="form-control" name="fechaNacimiento" aria-describedby="fechaNacimientoHelp" [(ngModel)]="jugador.fechaNacimiento" readonly> 
+        </div>
+
+        <button type="submit" class="btn btn-warning" (click)="eliminar()"> Eliminar </button>
+    </form>
+</div>

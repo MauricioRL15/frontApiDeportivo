@@ -34,4 +34,11 @@ abrirCompEditarEnviarId(jugador:Jugadores){
   this.router.navigate(["editar"]);
 }
 
+abrirCompEliminarEnviarId(jugador:Jugadores){
+  //enviar el id para realizar la busqueda
+  localStorage.setItem("id", jugador.id.toString());
+  this.router.navigate(["eliminar"]);
+}
+
+
 }

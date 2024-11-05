@@ -21,8 +21,8 @@
                 <td>{{jugador.primerApellido}} {{jugador.segundoApellido}}</td>
                 <td>{{jugador.fechaNacimiento}}</td>
                 <td><a class="btn btn-outline-warning" (click)="abrirCompEditarEnviarId(jugador)"><span class="material-icons">autorenew</span></a></td>
-                <td><a class="btn btn-outline-danger"><span class="material-icons">delete_outline</span></a></td>
+                <td><a class="btn btn-outline-danger" (click)="abrirCompEliminarEnviarId(jugador)"><span class="material-icons">delete_outline</span></a></td>
             </tr>
         </tbody>
   </table>
-</div>>
+</div>

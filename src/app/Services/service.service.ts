@@ -37,4 +37,8 @@ export class ServiceService {
     return this.http.post<Jugadores>(this.url + "buscar", jugador);
   }
 
+  eliminarJ(jugador:Jugadores){
+    return this.http.post<Jugadores>(this.url + "eliminar", jugador);
+  }
+
 }
