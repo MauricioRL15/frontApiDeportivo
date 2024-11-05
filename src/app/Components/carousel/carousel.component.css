@@ -1,0 +1,13 @@
+#carouselExampleControls {
+    max-width: 800px; /* Cambia a la anchura que desees */
+    max-height: 500px; /* Cambia a la altura que desees */
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+    margin-bottom: 5%;
+  }
+  
+  #carouselExampleControls .carousel-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Ajusta la imagen para que cubra completamente el espacio del contenedor */
+  }
+  

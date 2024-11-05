@@ -1,0 +1,28 @@
+<div class="container">
+    <h4>Lista de Jugadores</h4>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col"># Jugador</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Fecha Nacimento</th>
+            <th scope="col">Actualizar</th>
+            <th scope="col">Eliminar</th>
+        </tr>
+        </thead>
+        <tbody>
+            <!-- Se declra un ciclo para mostrar los registros -->
+            <tr *ngFor="let jugador of listarJugadores">
+                <th scope="row">{{jugador.id}}</th>
+                <td>{{jugador.numJugador}}</td>
+                <td>{{jugador.nombre}}</td>
+                <td>{{jugador.primerApellido}} {{jugador.segundoApellido}}</td>
+                <td>{{jugador.fechaNacimiento}}</td>
+                <td><a class="btn btn-outline-warning" (click)="abrirCompEditarEnviarId(jugador)"><span class="material-icons">autorenew</span></a></td>
+                <td><a class="btn btn-outline-danger"><span class="material-icons">delete_outline</span></a></td>
+            </tr>
+        </tbody>
+  </table>
+</div>>

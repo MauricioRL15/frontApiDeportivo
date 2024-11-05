@@ -1,0 +1,36 @@
+<div class="container">
+    <h5>Captura la nueva información del Jugador.</h5>
+    <h6 class="text-end">Los campos con (*) son obligatorios.</h6>
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">ID *</label>
+            <input type="number" class="form-control" name="id" aria-describedby="idHelp" [(ngModel)]="jugador.id" readonly>
+            <div id="idHelp" class="form-text">Ingrese el valor único de registro.</div>
+        </div>
+        <div class="mb-3"> 
+            <label for="numJugador" class="form-label">Número de Jugador *</label> 
+            <input type="number" class="form-control" name="numJugador" aria-describedby="numJugadorHelp" [(ngModel)]="jugador.numJugador" required> 
+            <div id="numJugadorHelp" class="form-text">Ingrese el número del jugador.</div>
+        </div>
+        <div class="mb-3"> 
+            <label for="nombre" class="form-label">Nombre *</label> 
+            <input type="text" class="form-control" name="nombre" aria-describedby="nombreHelp" [(ngModel)]="jugador.nombre" required> 
+            <div id="nombreHelp" class="form-text">Ingrese el nombre del jugador.</div> 
+        </div>
+        <div class="mb-3"> 
+            <label for="primerApellido" class="form-label">Primer Apellido *</label> 
+            <input type="text" class="form-control" name="primerApellido" aria-describedby="primerApellidoHelp" [(ngModel)]="jugador.primerApellido" required> 
+            <div id="primerApellidoHelp" class="form-text">Ingrese el primer apellido del jugador.</div>
+        </div>
+        <div class="mb-3"> 
+            <label for="segundoApellido" class="form-label">Segundo Apellido</label> 
+            <input type="text" class="form-control" name="segundoApellido" aria-describedby="segundoApellidoHelp" [(ngModel)]="jugador.segundoApellido"> 
+            <div id="segundoApellidoHelp" class="form-text">Ingrese el segundo apellido del jugador (opcional).</div> 
+        </div>
+        <div class="mb-3"> <label for="fechaNacimiento" class="form-label">Selecciona la Fecha de Nacimiento *</label> 
+            <input type="date" class="form-control" name="fechaNacimiento" aria-describedby="fechaNacimientoHelp" [(ngModel)]="jugador.fechaNacimiento" required> 
+        </div>
+
+        <button type="submit" class="btn btn-warning" (click)="editar()"> Actualizar </button>
+    </form>
+</div>
