@@ -24,7 +24,7 @@ export class EditarComponent {
     let id = localStorage.getItem("id");
     this.jugador.id = Number(id);
     //Consumir el servicio de buscar
-    this.servicio.buscarj(this.jugador).subscribe(data =>{
+    this.servicio.buscarJ(this.jugador).subscribe(data =>{
       // inicializame este con lo que viene en data
       this.jugador = data;
     });

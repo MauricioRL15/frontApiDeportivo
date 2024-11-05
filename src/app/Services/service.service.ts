@@ -33,7 +33,7 @@ export class ServiceService {
     return this.http.post<Jugadores>(this.url + "editar", jugador);
   }
 
-  buscarj(jugador:Jugadores){
+  buscarJ(jugador:Jugadores){
     return this.http.post<Jugadores>(this.url + "buscar", jugador);
   }
 
